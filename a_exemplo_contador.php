@@ -1,7 +1,7 @@
 <?php
 
 echo ("<h1> Quiz do Chaves (V ou F) </h1>");
- 
+
 echo ("<ol>");
 echo ("<li> O Chaves mora em um barril. (V) </li>");
 echo ("<li> A Chiquinha é filha do Seu Madruga. (V) </li>");
@@ -26,70 +26,62 @@ $p6 = rand(0, 1); //F
 $p7 = rand(0, 1); //F
 $p8 = rand(0, 1); //F
 $p9 = rand(0, 1); //V
-$p10 = rand(0, 1);//V
-
-$contador = 0;
-
-if($p1 == true){
-    $contador += 1;
-}
-
-if($p2 == true){
-    $contador += 1;
-}
-
-if($p3 == false){
-    $contador += 1;
-}
-
-if($p4 == true){
-    $contador += 1;
-}
-
-if($p5 == true){
-    $contador += 1;
-}
-
-if($p6 == false){
-    $contador += 1;
-}
-
-if($p7 == false){
-    $contador += 1;
-}
-
-if($p8 == true){
-    $contador += 1;
-}
-
-if($p9 == false){
-    $contador += 1;
-}
-
-if($p10 == false){
-    $contador += 1;
-}
-
-
-
-
-
-
-
+$p10 = rand(0, 1); //V
 
 echo ("<h1> Respostas do competidor </h1>");
 
-echo ("P1:" . $p1 . "<br>");
-echo ("P2:" . $p2 . "<br>");
-echo ("P3:" . $p3 . "<br>");
-echo ("P4:" . $p4 . "<br>");
-echo ("P5:" . $p5 . "<br>");
-echo ("P6:" . $p6 . "<br>");
-echo ("P7:" . $p7 . "<br>");
-echo ("P8:" . $p8 . "<br>");
-echo ("P9:" . $p9 . "<br>");
-echo ("P10:" . $p10 . "<br>");
+echo ("P1:" . $p1 . " (V)<br>");
+echo ("P2:" . $p2 . " (V)<br>");
+echo ("P3:" . $p3 . " (F)<br>");
+echo ("P4:" . $p4 . " (V)<br>");
+echo ("P5:" . $p5 . " (V)<br>");
+echo ("P6:" . $p6 . " (F)<br>");
+echo ("P7:" . $p7 . " (F)<br>");
+echo ("P8:" . $p8 . " (F)<br>");
+echo ("P9:" . $p9 . " (V)<br>");
+echo ("P10:" . $p10 . " (V)<br>");
 
+//Inicializa
+$contador = 0;
 
+if ($p1 == true) {
+    $contador += 1;
+}
 
-?>
+if ($p2 == true) {
+    $contador += 1;
+}
+
+if ($p3 == false) {
+    $contador += 1;
+}
+
+if ($p4 == true) {
+    $contador += 1;
+}
+
+if ($p5 == true) {
+    $contador += 1;
+}
+
+if ($p6 == false) {
+    $contador += 1;
+}
+
+if ($p7 == false) {
+    $contador += 1;
+}
+
+if ($p8 == true) {
+    $contador += 1;
+}
+
+if ($p9 == false) {
+    $contador += 1;
+}
+
+if ($p10 == false) {
+    $contador += 1;
+}
+
+echo ("<br> Você acertou " . $contador . " questões");
